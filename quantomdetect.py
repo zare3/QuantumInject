@@ -43,9 +43,9 @@ def isAForgedPacket(pkt):
 				print "------------------------------------------------"
 				print "------------------------------------------------"
 				print "ATTACK HAS BEEN FOUND AT: "
-				print "ORIGINAL PACKET: "
+				print "FORGED PACKET: "
 				prevPkt.show()
-				print "FORGET PACKET: "
+				print "ORIGINAL PACKET: "
 				pkt.show()
 		previousPackets.append(pkt)
 
