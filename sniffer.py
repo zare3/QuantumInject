@@ -11,7 +11,6 @@ parser.add_argument("-i", help="network interface to sniff")
 parser.add_argument("-r", help="regex to filter the packet according to request type")
 parser.add_argument("-d", help="data file that contains the new payload")
 parser.add_argument("-e", help="expression for scapy to filter packets")
-parser.add_argument("-verbose", help="verbosity level")
 terminalArgs = parser.parse_args()
 '''
 ########################
