@@ -11,7 +11,7 @@ We also change the payload so that it can be any file that would match the attac
 
 Code Usage:
 
-sudo python quantominject.py -i [interface] -e [expression] -d [datafile] 
+sudo python quantominject.py -i [interface] -r [regex] -e [expression] -d [datafile] 
 
 -i: network interface to sniff
 -r: regex to filter the packet according to request type
