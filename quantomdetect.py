@@ -61,7 +61,7 @@ elif interface and pcappath:
 	print "Dude, make up your mind. online or offline mode? You can't have both"
 elif interface:
 	print "Using interface: ", interface
-	packets = sniff (count = MAX_SIZE, iface = interface, filter = expression, prn = lambda pkt: customAction(pkt))
+	packets = sniff (count = MAX_SIZE, iface = interface, filter = expression, prn = lambda pkt: isAForgedPacket(pkt))
 else:
 	print "Using pcap: ", pcappath
 	packets = sniff(offline = pcappath, filter = expression, prn = lambda pkt: isAForgedPacket(pkt) )
